@@ -7,6 +7,8 @@
 - **Maven**
 - **Java 17+**
 
+  ![image alt](https://github.com/BdSoufiane/microservices-jee-devoir/blob/main/documentation/screenshots/configServer/config-produits.png?raw=true)
+
 ##  Comment le Lancer ?
 
 **Lancement :**
@@ -17,7 +19,7 @@ Vérification
 Après le démarrage, vous pouvez vérifier que le serveur lit les configurations de votre dépôt Git en accédant à :
 
 Configuration Commandes : http://localhost:8889/microservice-commandes/default
-![image alt](https://github.com/BdSoufiane/microservices-jee-devoir/blob/main/documentation/screenshots/configServer/config-produits.png?raw=true)
+
 
 
 Configuration Produits : http://localhost:8889/microservice-produits/default
@@ -25,5 +27,6 @@ Configuration Produits : http://localhost:8889/microservice-produits/default
 
 Configuration Gateway : http://localhost:8889/spring-cloud-gateway/default
 <img width="1269" height="901" alt="Config Gateway" src="../screenshots/config-gateway.png" />
+
 
 
