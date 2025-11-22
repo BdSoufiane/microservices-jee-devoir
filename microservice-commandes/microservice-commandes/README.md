@@ -28,7 +28,7 @@ Le microservice sera accessible sur `http://localhost:8081` (port configuré via
 ##  API Test
 
 **Get all commandes (Postman) :**
-<img width="1269" height="901" alt="Get All Commandes" src="../screenshots/commandes-get-all.png" />
+<img width="1269" height="901" alt="Get All Commandes" src="[../screenshots/commandes-get-all.png](https://github.com/BdSoufiane/microservices-jee-devoir/blob/main/documentation/screenshots/microservice_commande/getAllCommande1.PNG?raw=true)" />
 
 ##  Monitoring et Documentation
 
@@ -61,5 +61,6 @@ Pour tester le Circuit Breaker :
 <img width="676" height="828" alt="Health DOWN" src="../screenshots/health-down.png" />
 
 ---
+
 
 
