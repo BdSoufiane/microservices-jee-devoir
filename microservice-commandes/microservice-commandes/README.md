@@ -28,12 +28,14 @@ Le microservice sera accessible sur `http://localhost:8081` (port configuré via
 ##  API Test
 
 **Get all commandes (Postman) :**
-<img width="1269" height="901" alt="Get All Commandes" src="[../screenshots/commandes-get-all.png](https://github.com/BdSoufiane/microservices-jee-devoir/blob/main/documentation/screenshots/microservice_commande/getAllCommande1.PNG?raw=true)" />
+![image alt](https://github.com/BdSoufiane/microservices-jee-devoir/blob/main/documentation/screenshots/microservice_commande/getAllCommande1.PNG?raw=true)
+
 
 ##  Monitoring et Documentation
 
 **Swagger UI :** `http://localhost:8081/swagger-ui.html`
-<img width="1821" height="1016" alt="Swagger Commandes" src="../screenshots/swagger-commandes.png" />
+
+![image alt](https://github.com/BdSoufiane/microservices-jee-devoir/blob/main/documentation/screenshots/microservice_commande/monitoring_swager2.PNG?raw=true)
 
 ##  Démonstration Resilience4j
 
@@ -42,15 +44,16 @@ Pour tester le Circuit Breaker :
 1. **Assurez-vous que microservice-produits a son endpoint `/delay/{seconds}` fonctionnel.**
 
 2. **Accédez à `http://localhost:8081/actuator/circuitbreakers` pour voir l'état initial (CLOSED) :**
-<img width="1269" height="901" alt="Circuit Breaker Closed" src="../screenshots/circuit-breaker-closed.png" />
+
+![image alt](https://github.com/BdSoufiane/microservices-jee-devoir/blob/main/documentation/screenshots/microservice_commande/circuitBreaker3.PNG?raw=true)
 
 3. **Envoyez plusieurs requêtes POST à `http://localhost:8081/actuator/refresh` pour recharger les propriétés Resilience4j depuis Git.**
 
 4. **Envoyez plusieurs requêtes GET `http://localhost:8081/commandes/test-produit-delay/3` (le timeout est configuré à 2s). Vous devriez voir des réponses de fallback :**
-<img width="1269" height="901" alt="Circuit Breaker Fallback" src="../screenshots/circuit-breaker-fallback.png" />
 
 5. **Vérifiez à nouveau `http://localhost:8081/actuator/circuitbreakers`. Le Circuit Breaker devrait passer à l'état CLOSED :**
-<img width="1269" height="901" alt="Circuit Breaker CLOSE" src="../screenshots/circuit-breaker-open.png" />
+![image alt](https://github.com/BdSoufiane/microservices-jee-devoir/blob/main/documentation/screenshots/microservice_commande/circuit-breaker-closed5.PNG?raw=true)
+
 
 ## 🏥 Health Check Personnalisé
 
@@ -61,6 +64,7 @@ Pour tester le Circuit Breaker :
 <img width="676" height="828" alt="Health DOWN" src="../screenshots/health-down.png" />
 
 ---
+
 
 
 
